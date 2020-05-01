@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.1.0)
+  - SDWebImage (5.7.3):
+    - SDWebImage/Core (= 5.7.3)
+  - SDWebImage/Core (5.7.3)
+  - SWXMLHash (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - SDWebImage
+  - SWXMLHash
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
+  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
+
+PODFILE CHECKSUM: ed03d25a9b30d82c189e4726fdaa0e3167fecb24
+
+COCOAPODS: 1.9.1
