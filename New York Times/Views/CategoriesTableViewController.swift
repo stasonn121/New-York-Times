@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-import SWXMLHash
 
 class CategoriesTableVC: UITableViewController {
 
@@ -22,7 +20,6 @@ class CategoriesTableVC: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return categoriesController.sections.count
     }
 
@@ -33,9 +30,7 @@ class CategoriesTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
         cell.textLabel?.text = categoriesController.sections[indexPath.section]
-
         return cell
     }
     

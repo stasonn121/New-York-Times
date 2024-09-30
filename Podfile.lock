@@ -1,9 +1,9 @@
 PODS:
-  - Alamofire (5.1.0)
-  - SDWebImage (5.7.3):
-    - SDWebImage/Core (= 5.7.3)
-  - SDWebImage/Core (5.7.3)
-  - SWXMLHash (5.0.1)
+  - Alamofire (5.9.1)
+  - SDWebImage (5.19.7):
+    - SDWebImage/Core (= 5.19.7)
+  - SDWebImage/Core (5.19.7)
+  - SWXMLHash (7.0.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -17,10 +17,10 @@ SPEC REPOS:
     - SWXMLHash
 
 SPEC CHECKSUMS:
-  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
-  SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
-  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
+  SWXMLHash: dd733a457e9c4fe93b1538654057aefae4acb382
 
-PODFILE CHECKSUM: ed03d25a9b30d82c189e4726fdaa0e3167fecb24
+PODFILE CHECKSUM: 5b65e9adea3dfb785a0f8c2ede9272c58b308637
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.15.2

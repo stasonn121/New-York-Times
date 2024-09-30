@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol PostsControllerDelegate: class {
+protocol PostsControllerDelegate: AnyObject {
     func postsController(_ controller: PostsController, didReceive posts: [Post])
     func postsController(_ controller: PostsController, didReceive imageURL: URL, cell: PostTableViewCell)
 }

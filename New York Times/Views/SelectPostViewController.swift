@@ -7,22 +7,36 @@
 //
 
 import UIKit
+import WebKit
 
 class SelectPostViewController: UIViewController {
-
     let selectPostController = SelectPostController()
-    @IBOutlet weak var postView: UIWebView!
+    @IBOutlet private weak var postView: WKWebView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        postView.navigationDelegate = self
         selectPostController.delegate = self
         selectPostController.getRequest()
+        activityIndicator.startAnimating()
     }
     
 }
 
 extension SelectPostViewController: SelectPostControllerDelegate {
+    
     func selectPostController(_ controller: SelectPostController, request: URLRequest) {
-        postView.loadRequest(request)
+        postView.load(request)
     }
+    
+}
+
+extension SelectPostViewController: WKNavigationDelegate {
+
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        activityIndicator.isHidden = true
+        activityIndicator.stopAnimating()
+    }
+    
 }

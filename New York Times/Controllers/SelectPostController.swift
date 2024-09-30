@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SelectPostControllerDelegate: class {
+protocol SelectPostControllerDelegate: AnyObject {
     func selectPostController(_ controller: SelectPostController, request: URLRequest)
 }
 

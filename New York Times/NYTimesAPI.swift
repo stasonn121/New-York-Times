@@ -41,10 +41,10 @@ class NYTimesProvider {
         
         api.task = Task(section: section)
         AF.request(api.request, method: api.method, parameters: nil)
-        .response(completionHandler: { (request) in
+            .response { (request) in
                 switch request.result {
-                case .success(let data):
-                    let xml = SWXMLHash.parse(data!)["rss"]["channel"]["item"].all
+                case .success(let data):()
+                    let xml = XMLHash.parse(data!)["rss"]["channel"]["item"].all
                     var posts = [Post]()
                     for indexer in xml {
                         guard let titlePost = indexer["title"].element?.text,
@@ -59,8 +59,7 @@ class NYTimesProvider {
                 case .failure(let error):
                     completion(.failure(error))
                 }
-        })
-        
+        }
     }   
     
 }
