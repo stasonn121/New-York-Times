@@ -1,11 +1,11 @@
-Alamofire был использован дл€ запросов на сервер New York Times. „тобы получить информацию о постах.
+Lamofire was used to request the New York Times server. To get information about posts.
 
-SWXMLHash был использован дл€ парсинга XML формата.
+SWXMLHash was used to parse the XML format.
 
-SDWebImage был использован дл€ загрузки изображений в фоновом потоке, с использованием Placeholder дл€ изображени€.
+SDWebImage was used to load images in the background stream, using Placeholder for the image.
 
-Ќа первом экране показан список тем по которым есть посты. ¬озможности дл€ парсинга списка тем не было, так как не обнаружил этого в API.
+The first screen shows a list of topics on which there are posts. There was no possibility to parse the list of topics, as I did not find it in the API.
 
-Ќа втором экране показан список информационных постов по выбранной с прошлого экрана темы. ¬ €чейке таблицы присутствует Title, Description, Image поста.
+The second screen shows a list of information posts on the topic selected from the previous screen. The table cell contains Title, Description, Image of the post.
 
-Ќа третьем экране загружаетс€ веб-страница с выбранным постом со второго экрана. ѕотому как, в xml документе была указана html-ссылка на информационный пост
+On the third screen, a web page with the selected post is loaded from the second screen. Because the xml document contained an html link to the information post
